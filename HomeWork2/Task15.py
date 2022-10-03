@@ -3,15 +3,16 @@
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
 def list_factorials(number):
-    list = []
+    user_list = []
     factorial = 1
     if number < 1:
         list_factorials(int(input('Enter a positive number: ')))
     else:
         for i in range(1, number + 1):
             factorial *= i
-            list.append(factorial)
-        print(list)
+            user_list.append(factorial)
+        print(user_list)
+
 
 try:
     list_factorials(int(input('Enter a positive number: ')))
