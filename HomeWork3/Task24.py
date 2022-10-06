@@ -11,7 +11,6 @@ def difference_max_min_fractional_parts(user_list):
             continue
         else:
             new_list.append(round(i, 2))
-    new_list = sorted(new_list)
     print('Разница между максимальным и минимальным значением ' +
           f'дробной части = {max(new_list) - min(new_list)}')
 
