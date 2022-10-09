@@ -13,15 +13,13 @@ def calculating_number_pi(user_number):
     while user_number != 1:
         user_number *= 10
         degree += 1
-    for i in range(1, 10 * degree, 2):
+    for i in range(1, 10 ** degree, 2):
         result_first = result_second + (4 / (2 * i - 1))
         result_second = result_first - (4 / (2 * (i + 1) - 1))
     number_pi = str((result_first + result_second) / 2)
-    print(number_pi[:degree])
+    print(f'Результат: {number_pi[:10]}')
 
 
 d = float(input('Веедите точность вычисления: '))
 calculating_number_pi(d)
-# num_pi = str(calculating_number_pi(d))
-# print(num_pi[:8])
-print(pi)
+print(f'Проверка: {pi}')
