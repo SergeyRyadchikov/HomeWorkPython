@@ -17,7 +17,7 @@ def calculating_number_pi(user_number):
         result_first = result_second + (4 / (2 * i - 1))
         result_second = result_first - (4 / (2 * (i + 1) - 1))
     number_pi = str((result_first + result_second) / 2)
-    print(f'Результат: {number_pi[:10]}')
+    print(f'Результат: {number_pi[:degree + 2]}')
 
 
 d = float(input('Веедите точность вычисления: '))

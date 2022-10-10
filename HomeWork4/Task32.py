@@ -44,7 +44,7 @@ def list_unique_elements2(user_lsit):
 # lst_unique_elem = list(set(user_lst))
 # print(lst_unique_elem)
 
-# Version 3: Остаются только неповторяющиеся элементы исходного списка
+# # Version 3: Остаются только неповторяющиеся элементы исходного списка
 user_lst = create_list(int(input('Введите размерность списка: ')))
 print(user_lst)
 lst_unique_elem = list_unique_elements2(user_lst)
