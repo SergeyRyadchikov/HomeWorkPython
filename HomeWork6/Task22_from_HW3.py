@@ -16,7 +16,9 @@
 
 import random
 
-lst = [random.randint(1, 20) for i in range(int(input('Введите длину списка: ')))]
+lst = [random.randint(1, 20)
+       for i in range(int(input('Введите длину списка: ')))]
 print(lst)
-result = sum([x for i, x in enumerate(lst, 1) if not i % 2])
+# result = sum([x for i, x in enumerate(lst) if i % 2])
+result = sum([lst[x] for x in range(len(lst)) if x % 2])
 print(result)
