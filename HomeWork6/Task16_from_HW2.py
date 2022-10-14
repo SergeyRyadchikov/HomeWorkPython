@@ -19,6 +19,5 @@
 
 n = int(input('Введите число: '))
 new_list = [(round(((1 + 1 / i)**i), 3)) for i in range(1, n + 1)]
-result = sum([i for i in new_list])
 print(new_list)
-print(result)
+print(sum(new_list))
