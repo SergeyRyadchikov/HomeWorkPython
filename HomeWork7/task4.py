@@ -47,7 +47,7 @@ class Car:
         if key != 3:
             print(f'Автомобиль поворачивает {self.direction[key]}!')
         else:
-            print(f'Автомобиль движется {self.direction[key]}!') 
+            print(f'Автомобиль движется {self.direction[key]}!')
 
     def show_speed(self):
         print(f'Текущая скорость автомобиля: {self.speed}')
@@ -59,7 +59,8 @@ class TownCar(Car):
         if self.speed <= 60:
             print(f'Текущая скорость автомобиля: {self.speed}')
         else:
-            print(f'ВНИМАНИЕ! Превышение скорости! Текущая скорость автомобиля: {self.speed}')
+            print(
+                f'ВНИМАНИЕ! Превышение скорости! Текущая скорость автомобиля: {self.speed}')
 
 
 class SportCar(Car):
@@ -75,7 +76,8 @@ class WorkCar(Car):
         if self.speed <= 40:
             print(f'Текущая скорость автомобиля: {self.speed}')
         else:
-            print(f'ВНИМАНИЕ! Превышение скорости! Текущая скорость автомобиля: {self.speed}')
+            print(
+                f'ВНИМАНИЕ! Превышение скорости! Текущая скорость автомобиля: {self.speed}')
 
 
 class PoliceCar(Car):
@@ -88,6 +90,7 @@ class PoliceCar(Car):
 
 
 print('\n<<   Car   >>\n')
+
 obj_car = Car('Red', 'Ferarri', False)
 obj_car.go()
 obj_car.stop()
