@@ -19,11 +19,11 @@ class TrafficLight:
     __color = (('Red', 7), ('Yellow', 2), ('Green', 5))
 
 
-    def runnung(self):
+    def running(self):
         for i in self.__color:
             print(i[0])
             t.sleep(i[1])
 
 
 trfc_lt = TrafficLight()
-trfc_lt.runnung()    
+trfc_lt.running()    
