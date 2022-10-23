@@ -42,7 +42,10 @@ obj_pen = Pen('Ручка')
 obj_pencil = Pencil('Карандаш')
 obj_handle = Handle('Маркер')
 
+
 obj_stationary.draw()
 obj_pen.draw()
 obj_pencil.draw()
 obj_handle.draw()
+
+
